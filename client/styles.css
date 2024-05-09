@@ -13,8 +13,8 @@
 .ul {
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
-
 ul li {
   color: gray;
   text-decoration: none;
@@ -84,7 +84,7 @@ ul li {
 }
 
 /*  */
-.footer {
+/* .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -114,9 +114,44 @@ ul li {
 }
 .lett {
   margin-bottom: 10px;
+} */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 5%;
+
+  background-color: rgba(232, 208, 51, 0.874);
+  flex-wrap: wrap;
 }
 
-/*  */
+.footer ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.footer ul li {
+  margin-top: 6px;
+}
+
+.sectiona,
+.sectionb,
+.sectionc,
+.sectiond {
+  /* padding: 20px;  */
+  padding: 49px;
+}
+
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 
 .end {
   display: flex;
   background-color: rgb(244, 209, 6);
@@ -138,7 +173,93 @@ ul li {
 }
 .bb_b {
   margin-top: 8px;
-}
+} */
 /* .main_footer {
   margin: 0 100px;
 } */
+
+.main_end {
+  display: flex;
+  background-color: rgb(244, 209, 6);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+}
+
+.bbb {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.aa {
+  list-style: none;
+}
+
+.image-grid img {
+  border: 5px solid rgba(245, 245, 245, 0.595); /* Border color and thickness */
+  box-shadow: 0px 3px 10px black; /* Box shadow */
+}
+
+@media (max-width: 600px) {
+  #placeholder {
+    margin-top: 10px;
+  }
+  .footer {
+    display: flex;
+    margin-top: 5px;
+  }
+  .lett {
+    margin-top: 6px;
+  }
+  .section1,
+  .section2 {
+    display: flex;
+  }
+
+  .sectiona,
+  .sectionb,
+  .sectionc,
+  .sectiond {
+    /* padding: 0 20px;  */
+    padding: 0px;
+  }
+  .aaa ul li {
+    padding: 5px;
+  }
+  #copy {
+    margin-left: 6px;
+  }
+  .bbb {
+    padding: 1px;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    /* gap: 20px;  */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+    /* gap: 25px;  */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+
+    /* gap: 20px;  */
+  }
+}
