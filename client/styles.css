@@ -66,9 +66,7 @@ ul li {
 
 .paragraph {
   margin-top: 10px;
-  /* font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal; */
+  color: black;
   line-height: 2;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -76,7 +74,7 @@ ul li {
 }
 .ft {
   font-family: "Kotta One", serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   line-height: 1.5;
 }
@@ -211,6 +209,9 @@ ul li {
     padding-bottom: 10px;
   }
   .paragraph {
+    line-height: 1.5;
+  }
+  .ft {
     line-height: 1.5;
   }
   .image-grid {
