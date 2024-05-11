@@ -12,11 +12,16 @@
 }
 
 .header {
-  background-color: rgba(232, 208, 51, 0.874);
+  /* background-color: rgba(232, 208, 51, 0.874); */
+  background-color: gold;
   display: flex;
   justify-content: space-between;
   padding: 10px 9%;
   flex-wrap: wrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: sticky;
+  top: 0;
 }
 
 .ul {
