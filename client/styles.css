@@ -193,6 +193,9 @@ ul li {
   .section2 {
     display: flex;
   }
+  .image-grid img {
+    width: 97%;
+  }
 
   .sectiona,
   .sectionb,
